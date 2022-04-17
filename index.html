@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Разводящая страница</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <div class="header-logo">
+          <div class="header-logo__img"></div>
+          <div class="header-logo__text">донецкий национальный университет</div>
+        </div>
+        <div class="header-auth">
+          <div class="header-auth__user-name"></div>
+          <a href="#" class="header-auth__login"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="base-page">
+    <div class="base-page__links">
+      <h1 class="base-page__title">все страницы</h1>
+      <ul class="base-page__list">
+        <li class="base-page__list--item"><a class="base-page__list--ref" href="../html/authorize.html" class="">Авторизация</a></li>
+        <li class="base-page__list--item"><a class="base-page__list--ref" href="../html/student.html" class="">Студент</a></li>
+        <li class="base-page__list--item"><a class="base-page__list--ref" href="../html/students.html" class="">Студенты</a></li>
+        <li class="base-page__list--item"><a class="base-page__list--ref" href="../html/person.html" class="">Физ. лицо</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<style>
+  body{
+    background: linear-gradient(252.44deg, #33588c 0%, #337fa3 100%);
+    /* Все остальное что бы не рвался градиент */
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .base-page{
+    display: flex; 
+    align-items: center;
+    justify-content: center;   
+  }
+  .base-page__links{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .base-page__title{
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .base-page__list--item{
+    color: #fff;
+  }
+
+  .base-page__list--ref{
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+</style>

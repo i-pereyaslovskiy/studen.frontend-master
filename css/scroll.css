@@ -1,0 +1,47 @@
+
+/* СКРОЛ */
+:root {
+--scrollbarBg: #32578b;
+--scrollbarThumb: rgba(255, 255, 255, 0.8);
+--scrollbarWidth: 12px;
+--scrollbarBorder: 3px solid var(--scrollbarBg);
+--scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+}
+
+nav.navigation {
+scrollbar-width: var(--scrollbarWidth);
+scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+}
+nav.navigation::-webkit-scrollbar {
+width: var(--scrollbarWidth);
+}
+nav.navigation::-webkit-scrollbar-track {
+background: var(--scrollbarBg);
+border-radius: var(--scrollbarBorderRadius);
+}
+
+nav.navigation::-webkit-scrollbar-thumb {
+background-color: var(--scrollbarThumb);
+border-radius: var(--scrollbarBorderRadius);
+border: var(--scrollbarBorder);
+}
+
+
+/* textarea {
+--scrollbarBg: white;
+scrollbar-width: var(--scrollbarWidth);
+scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+}
+textarea::-webkit-scrollbar {
+width: var(--scrollbarWidth);
+}
+textarea::-webkit-scrollbar-track {
+background: var(--scrollbarBg);
+border-radius: var(--scrollbarBorderRadius);
+}
+
+textarea::-webkit-scrollbar-thumb {
+background-color: var(--scrollbarThumb);
+border-radius: var(--scrollbarBorderRadius);
+border: var(--scrollbarBorder);
+}  */

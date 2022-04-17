@@ -1,0 +1,496 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("scroll.css");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #dae3ef;
+  font-family: "Open Sans", sans-serif;
+}
+
+.body-container {
+  background: linear-gradient(252.44deg, #33588c 0%, #337fa3 100%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* inputs, labels их общая стилизация для всего проекта */
+input,
+label,
+textarea {
+  display: block;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #064bfb;
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid #064bfb;
+}
+
+.input {
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+label {
+  padding: 0px 0px 0px 7px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+input {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0px 10px 0px 10px;
+}
+
+.textarea {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px -25px;
+  height: 100px !important;
+}
+
+/* Общие стили для кнопок */
+button,
+button:active,
+button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(0deg, #d24a0f, #d24a0f);
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* БЛОК Доступа к изменениям */
+
+.change-access{
+  background: #D9E3F1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+  border-radius: 10px;
+}
+
+.change-access__btn{
+  height: 25px;
+  margin: 0px 10% 0px 0px;
+  width: 220px;
+}
+
+.change-access__hide {
+  display: none;
+}
+
+.change-access__show {
+  display: block;
+}
+
+/* HEADER */
+
+/* .container {
+  max-width: 1920px;
+} */
+.header {
+  background: #32578b;
+  /* box-shadow: 0 0 5px 2px red; */
+  /* box-shadow: 0px 10px 20px rgba(40, 64, 99, 0.18),
+    0px 2px 6px rgba(40, 64, 99, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  margin: 0px 0px 2px 0px; */
+}
+.header-container {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.header-logo {
+  height: 70px;
+  display: flex;
+}
+
+.header-logo__img {
+  margin: 10px 0px 10px 25px;
+  height: 50px;
+  width: 55px;
+  background: url("../img/logo.png") no-repeat;
+  background-size: 55px 50px;
+}
+
+.header-logo__text {
+  margin: 10px 0px 10px 10px;
+  max-width: 100px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.header-auth {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: normal;
+  align-items: flex-end;
+  justify-content: center;
+  height: 70px;
+  margin: 0px 35px 0px 0px;
+}
+
+.header-auth__login {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Контейнер страницы */
+.page {
+  display: flex;
+  height: calc(100% - 70px);
+}
+
+/* Навигация */
+
+ul {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.navigation {
+  flex-basis: 300px;
+  flex-shrink: 0;
+  /* flex-grow: 1; */
+  height: 100%;
+  background: linear-gradient(208.95deg, #32578b 55.06%, #337fa3 84.86%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: auto;
+  transition: all 0.7s ease 0s;
+}
+
+.navigation-menu {
+  list-style-type: none;
+  position: relative;
+}
+
+.navigation-menu__item {
+  min-height: 60px;
+  border-bottom: 1px solid #2c3e6d;
+  transition: all 0.3s ease 0s;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.navigation-menu__item:first-child {
+  border-top: 1px solid #2c3e6d;
+  align-items: center;
+}
+
+.navigation-menu__item--link.parent {
+  margin: 16px 0px 16px 0px;
+}
+
+.navigation-menu__item:nth-of-type(2):before {
+  content: url(../img/stud.svg);
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  top: 6px;
+}
+.navigation-menu__item:nth-of-type(3):before {
+  content: url(../img/group.svg);
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  top: 6px;
+}
+.navigation-menu__item:nth-of-type(4):before {
+  content: url(../img/schedule.svg);
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  top: 6px;
+}
+.navigation-menu__item:nth-of-type(5):before {
+  content: url(../img/estimation.svg);
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  top: 6px;
+}
+.navigation-menu__item:nth-of-type(6):before {
+  content: url(../img/diploma.svg);
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  top: 6px;
+}
+.navigation-menu__item:nth-of-type(7):before {
+  content: url(../img/order.svg);
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  top: 6px;
+}
+.navigation-menu__item:nth-of-type(8):before {
+  content: url(../img/report.svg);
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  top: 6px;
+}
+
+.navigation-menu__item:first-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 35px;
+}
+
+.navigation-menu__item--link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 29px;
+  margin: 16px 0px 16px 0px;
+  transition: all 0.7s ease 0s;
+}
+.navigation-menu__item:not(:first-child) > .navigation-menu__item--link:hover,
+.sub-navigation-menu__item--link:hover {
+  text-decoration: underline;
+}
+
+/* Под навигация - 2 уровень */
+.sub-navigation-menu {
+  display: none;
+  left: 0;
+}
+
+.sub-navigation-menu.open {
+  display: block;
+}
+.sub-navigation-menu__item {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #2c3e6d;
+  background: #2d4e7d;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.sub-navigation-menu__item--link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0px 0px 0px 30px;
+}
+
+.arrow {
+  margin: 21px 0px 0px 0px;
+  position: absolute;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #fff;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+}
+
+.arrow.active {
+  transform: rotate(90deg);
+}
+
+/* БУРГЕР */
+.navigation-menu__item--burger {
+  z-index: 5;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.navigation-menu__item--burger span,
+.navigation-menu__item--burger::before,
+.navigation-menu__item--burger::after {
+  left: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  transition: all 0.7s ease 0s;
+  background: #fff;
+}
+
+.navigation-menu__item--burger::before,
+.navigation-menu__item--burger::after {
+  content: "";
+}
+
+.navigation-menu__item--burger::before {
+  top: 0;
+}
+
+.navigation-menu__item--burger::after {
+  bottom: 0;
+}
+
+.navigation-menu__item--burger span {
+  top: 50%;
+  transform: scale(1) translate(0px, -50%);
+}
+
+.navigation-menu__item--burger._active span {
+  transform: scale(0) translate(0px, -50%);
+}
+
+.navigation-menu__item--burger._active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.navigation-menu__item--burger._active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
+}
+
+.navigation._active {
+  flex-basis: 100px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+._active .navigation-menu__arrow {
+  display: none;
+}
+._active .navigation-menu__item--link {
+  display: none;
+}
+
+._active > .navigation-menu > .navigation-menu__item > .sub-navigation-menu {
+  display: none;
+}
+
+.navigation._active > .navigation-menu > .navigation-menu__item::before {
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Главный блок */
+
+
+
+.wrapper {
+  background: #fff;
+  border-radius: 10px 10px 0px 0px;
+  height: calc(100% - 40px);
+  margin:20px;
+  width: 100%;
+  overflow: auto;
+}
+
+.contant {
+  padding: 35px 30px 0px 30px;
+}
+
+
+
+.general-info__block{
+  margin: 0px 0px 30px 0px;
+}
+
+.inputs-tabs{
+  display: flex;
+  max-width: 1100px;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.general-info{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.general-info__title{
+  font-weight: bold;
+}
+
+.inputs-tabs__form{
+  margin: 0px 30px 0px 0px;
+}
+
+.form-inputs__input--lg{
+  width: 550px;
+  height: 40px;
+}
+.form-inputs__input--extra-sm{
+  width: 210px;
+  height: 40px;
+}
+.form-inputs__input--sm{
+  width: 350px;
+  height: 40px;
+}
+.form-inputs__input--extra-lg{
+  width:930px;
+  height: 40px;
+
+}
+
+.save-cahnges__general-info{
+  display: flex;
+  justify-content: end;
+  margin: 25px 10% 25px 0px;
+}
+
+.save-cahnges-btn{
+  width: 225px;
+  height: 50px;
+}

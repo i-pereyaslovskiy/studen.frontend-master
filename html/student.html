@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студент</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/tabs.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container header">
+          <div class="header-logo">
+            <div class="header-logo__img"></div>
+            <div class="header-logo__text">
+              донецкий национальный университет
+            </div>
+          </div>
+          <div class="header-auth">
+            <div class="header-auth__user-name">a.timoshkov</div>
+            <a href="#" class="header-auth__login">Выход</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /.header -->
+    <main class="page">
+      <nav class="navigation">
+        <ul class="navigation-menu">
+          <li class="navigation-menu__item">
+            <div class="navigation-menu__item--link">Меню</div>
+            <div class="navigation-menu__item--burger">
+              <span></span>
+            </div>
+
+            <!-- <a class="navigation-menu__item--link" href="#">Меню</a> -->
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Студенты</a>
+            <span class="navigation-menu__arrow arrow"></span>
+            <ul class="sub-navigation-menu">
+              <li class="sub-navigation-menu__item">
+                <a class="sub-navigation-menu__item--link" href="#">1.Студенты</a>
+              </li>
+              <li class="sub-navigation-menu__item">
+                <a class="sub-navigation-menu__item--link" href="#">2.Студенты</a>
+              </li>
+              <li class="sub-navigation-menu__item">
+                <a class="sub-navigation-menu__item--link" href="#">3.Студенты</a>
+              </li>
+              <li class="sub-navigation-menu__item">
+                <a class="sub-navigation-menu__item--link" href="#">4.Студенты</a>
+              </li>
+              <li class="sub-navigation-menu__item">
+                <a class="sub-navigation-menu__item--link" href="#">5.Студенты</a>
+              </li>
+              <li class="sub-navigation-menu__item">
+                <a class="sub-navigation-menu__item--link" href="#">6.Студенты</a>
+              </li>
+              <li class="sub-navigation-menu__item">
+                <a class="sub-navigation-menu__item--link" href="#">7.Студенты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Группы</a>
+              <span class="navigation-menu__arrow arrow"></span>
+              <ul class="sub-navigation-menu">
+                <li class="sub-navigation-menu__item">
+                  <a class="sub-navigation-menu__item--link" href="#">1.Студенты</a>
+                </li>
+                <li class="sub-navigation-menu__item">
+                  <a class="sub-navigation-menu__item--link" href="#">2.Студенты</a>
+                </li>
+                <li class="sub-navigation-menu__item">
+                  <a class="sub-navigation-menu__item--link" href="#">3.Студенты</a>
+                </li>
+                <li class="sub-navigation-menu__item">
+                  <a class="sub-navigation-menu__item--link" href="#">4.Студенты</a>
+                </li>
+                <li class="sub-navigation-menu__item">
+                  <a class="sub-navigation-menu__item--link" href="#">5.Студенты</a>
+                </li>
+                <li class="sub-navigation-menu__item">
+                  <a class="sub-navigation-menu__item--link" href="#">6.Студенты</a>
+                </li>
+                <li class="sub-navigation-menu__item">
+                  <a class="sub-navigation-menu__item--link" href="#">7.Студенты</a>
+                </li>
+              </ul>
+
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Расписание</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Оценки</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Дипломы</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Приказы</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Отчеты</a>
+          </li>
+          <!-- <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Отчеты</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Отчеты</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Отчеты</a>
+          </li> -->
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+        <div class="contant">
+          <div data-tabs class="tabs">
+            <nav data-tabs-titles class="tabs__navigation">
+              <button type="submit" class="tabs__title _tab-active">
+                Информация
+              </button>
+              <button type="submit" class="tabs__title">Направления</button>
+              <button type="submit" class="tabs__title">Оценки</button>
+              <button type="submit" class="tabs__title">Документы</button>
+            </nav>
+            <div data-tabs-body class="tabs__content">
+              <div class="tabs__body">
+                <div class="tabs-container">
+
+                  <div class="change-access">
+                    <button class="change-access__btn button">Изменить</button>
+                  </div>
+
+
+                  <div class="general-info">
+                    <div class="general-info__block">
+                    <p class="general-info__title">
+                      Общая информация 
+                    </p>
+                    <div class="form-inputs inputs-tabs">
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="fio">ФИО</label>
+                        <input class="form-inputs__input--lg input" id="fio" type="text" value="" name="fio" placeholder="Поле ввода" disabled>
+                      </div>
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="dob">Дата рождения</label>
+                        <input class="form-inputs__input--sm input" id="dob" type="text" value="" name="dob" placeholder="Поле ввода" disabled>
+                      </div>
+
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="email">електронна почта</label>
+                        <input class="form-inputs__input--lg input" id="email" type="text" value="" name="email" placeholder="Поле ввода" disabled>
+                      </div>
+
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="stud_tel">тел</label>
+                        <input class="form-inputs__input--sm input" id="text" type="stud_tel" value="" name="stud_tel" placeholder="Поле ввода" disabled>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="general-info__block">
+                    <p class="general-info__title">
+                      Информация о родителях 
+                    </p>
+                    <div class="form-inputs inputs-tabs">
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="fio_father">ФИО отца</label>
+                        <input class="form-inputs__input--lg input" id="fio_father" type="text" value="" name="fio_father" placeholder="Поле ввода" disabled>
+                      </div>
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="tel_father">тел</label>
+                        <input class="form-inputs__input--sm input" id="tel_father" type="text" value="" name="tel_father" placeholder="Поле ввода" disabled>
+                      </div>
+
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="fio_mother">ФИО матери</label>
+                        <input class="form-inputs__input--lg input" id="fio_mother" type="text" value="" name="fio_mother" placeholder="Поле ввода" disabled>
+                      </div>
+
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="tel_father">тел</label>
+                        <input class="form-inputs__input--sm input" id="tel_mother" type="text" value="" name="tel_mother" placeholder="Поле ввода" disabled>
+                      </div>
+                    </div>
+
+                    </div>      
+                    <div class="general-info__block">        
+                    <p class="general-info__title">
+                      Дополнительня информация 
+                    </p>
+                    <div class="form-inputs__input inputs-tabs">
+                      <textarea class="form-inputs__input--extra-lg textarea" id="stud_other_info" name="stud_other_info" rows="5" cols="33" placeholder="Поле ввода" disabled>
+                      </textarea>
+                    </div>
+
+                  </div>
+                  </div>
+                  <div class="save-cahnges__general-info">
+                    <button class="save-cahnges-btn button change-access__show">Сохранить изменения</button>
+                  </div> 
+                </div>
+              </div>
+              <div class="tabs__body">
+                2(Направления) Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore odio exercitationem, excepturi similique nulla,
+                voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit
+                voluptate enim quo sed, minima error molestias!
+              </div>
+              <div class="tabs__body">
+                3(Оценки) Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore odio exercitationem, excepturi similique nulla, voluptatem
+                reprehenderit neque a minima eaque tenetur? Quos fugit voluptate
+                enim quo sed, minima error molestias!
+              </div>
+              <div class="tabs__body">
+                4(Документы) Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore odio exercitationem, excepturi similique nulla,
+                voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit
+                voluptate enim quo sed, minima error molestias!
+              </div>
+            </div>
+          </div>
+          <!-- /tabs -->
+        </div>
+        <!-- contant -->
+      </div>
+      <!-- wrapper -->
+
+      
+    </main>
+  </body>
+  <script src="../js/tabs.js"></script>
+  <script src="../js/navigation.js"></script>
+</html>
+
