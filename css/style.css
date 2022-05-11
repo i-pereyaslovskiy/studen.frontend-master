@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 @import url("scroll.css");
+@import url("inputs.css");
 
 html,
 body {
@@ -21,49 +22,6 @@ body {
   background-attachment: fixed;
 }
 
-/* inputs, labels их общая стилизация для всего проекта */
-input,
-label,
-textarea {
-  display: block;
-}
-
-input:focus {
-  outline: none;
-  border: 2px solid #064bfb;
-}
-
-textarea:focus {
-  outline: none;
-  border: 2px solid #064bfb;
-}
-
-.input {
-  background: #ffffff;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 10px;
-  margin: 0px 0px 10px 0px;
-}
-
-label {
-  padding: 0px 0px 0px 7px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-input {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  padding: 0px 10px 0px 10px;
-}
 
 .textarea {
   font-family: "Open Sans", sans-serif;
@@ -76,7 +34,7 @@ input {
   font-size: 16px;
   line-height: 22px;
   padding: 10px 10px 10px 10px;
-  margin: 0px 0px 0px -25px;
+  /* margin: 0px 0px 0px -25px; */
   height: 100px !important;
 }
 
@@ -98,6 +56,8 @@ button:focus {
   border-radius: 10px;
   border: none;
 }
+
+
 
 
 /* БЛОК Доступа к изменениям */
@@ -220,7 +180,6 @@ ul {
   min-height: 60px;
   border-bottom: 1px solid #2c3e6d;
   transition: all 0.3s ease 0s;
-
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -293,7 +252,9 @@ ul {
   font-size: 21px;
   line-height: 29px;
   margin: 16px 0px 16px 0px;
-  transition: all 0.7s ease 0s;
+  /* transition: all 0.7s ease 0s; */
+  /* transition-delay: 0.5s; */
+
 }
 .navigation-menu__item:not(:first-child) > .navigation-menu__item--link:hover,
 .sub-navigation-menu__item--link:hover {
@@ -319,6 +280,7 @@ ul {
   top: 0;
   display: flex;
   align-items: center;
+
 }
 
 .sub-navigation-menu__item--link {
@@ -356,6 +318,7 @@ ul {
   height: 20px;
   cursor: pointer;
 }
+
 
 .navigation-menu__item--burger span,
 .navigation-menu__item--burger::before,
@@ -404,6 +367,7 @@ ul {
   flex-basis: 100px;
   flex-shrink: 0;
   overflow: hidden;
+
 }
 
 ._active .navigation-menu__arrow {
@@ -443,19 +407,23 @@ ul {
 
 
 
-.general-info__block{
-  margin: 0px 0px 30px 0px;
-}
 
 .inputs-tabs{
   display: flex;
   max-width: 1100px;
-  justify-content:center;
+  /* justify-content:center; */
   flex-wrap: wrap;
 }
 .general-info{
   width: 1200px;
   margin: 0 auto;
+  /* display: flex; */
+  /* flex-direction: column; */
+  
+}
+.general-info__block{
+  margin: 0px 0px 30px 0px;
+  /* flex: 1 0 auto; */
 }
 
 .general-info__title{
@@ -464,6 +432,9 @@ ul {
 
 .inputs-tabs__form{
   margin: 0px 30px 0px 0px;
+}
+.form-inputs {
+  margin: 0px 0px 0px 25px;
 }
 
 .form-inputs__input--lg{
@@ -484,6 +455,24 @@ ul {
 
 }
 
+.radio-btn__group{
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+.radio-btn__group-container{
+  display:flex;
+}
+
+.radio-btn__group-container > fieldset {
+  display: flex;
+  border: 1px dashed black;
+}
+
+.radio-btn__item {
+  margin: 0px 25px 0px 0px;
+}
+
 .save-cahnges__general-info{
   display: flex;
   justify-content: end;
@@ -493,4 +482,10 @@ ul {
 .save-cahnges-btn{
   width: 225px;
   height: 50px;
+}
+ /* Класс опустить кнопку */
+.btn-bottom{
+  position: absolute;
+  bottom: 20px;
+  right: 2.5%;
 }

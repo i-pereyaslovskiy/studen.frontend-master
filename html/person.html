@@ -47,6 +47,7 @@
 
             <!-- <a class="navigation-menu__item--link" href="#">Меню</a> -->
           </li>
+
           <li class="navigation-menu__item">
             <a class="navigation-menu__item--link" href="#">Студенты</a>
             <span class="navigation-menu__arrow arrow"></span>
@@ -117,111 +118,196 @@
           <li class="navigation-menu__item">
             <a class="navigation-menu__item--link" href="#">Отчеты</a>
           </li>
-
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__item--link" href="#">Отчеты</a>
+          </li>
         </ul>
       </nav>
 
       <div class="wrapper">
         <div class="contant">
-          <div class="change-access">
-            <button class="change-access__btn button">Изменить</button>
-          </div>
+          <div data-tabs class="tabs">
+            <nav data-tabs-titles class="tabs__navigation">
+              <button type="submit" class="tabs__title _tab-active">
+                Информация
+              </button>
+              <button type="submit" class="tabs__title">Родители</button>
+              <button type="submit" class="tabs__title">Награды</button>
+              <button type="submit" class="tabs__title">Льготы</button>
+              <button type="submit" class="tabs__title">Документы</button>
+            </nav>
+            <div data-tabs-body class="tabs__content">
+              <div class="tabs__body">
+                <div class="tabs-container">
+                  <div class="change-access">
+                    <button class="change-access__btn button">Изменить</button>
+                  </div>
+                  <div class="general-info">
+                    <div class="general-info__block">
+                    <p class="general-info__title">
+                      Общая информация 
+                    </p>
+                    <div class="form-inputs inputs-tabs">
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="surname">Фамилия</label>
+                        <input class="form-inputs__input--extra-sm input" id="surname" type="text" value="" name="surname" placeholder="Поле ввода" >
+                      </div>
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="name">Имя</label>
+                        <input class="form-inputs__input--extra-sm input" id="name" type="text" value="" name="name" placeholder="Поле ввода" >
+                      </div>
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="patronymic">Отчество</label>
+                        <input class="form-inputs__input--extra-sm input" id="patronymic" type="text" value="" name="patronymic" placeholder="Поле ввода" >
+                      </div>
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="dob">Дата рождения</label>
+                        <input class="form-inputs__input--extra-sm input" id="dob" type="text" value="" name="dob" placeholder="Поле ввода" >
+                      </div>
+                      <div class="form-inputs__input inputs-tabs__form radio-btn__group">
+                        <div class="radio-btn__group-container"> 
+                          <fieldset>
+                          <legend>Пол:</legend>
+                          <div  class="radio-btn__item">
+                            <input type="radio" id="huey" name="drone" value="huey"
+                                  checked>
+                            <label for="huey">Мужской</label>
+                          </div>
+                          <div class="radio-btn__item">
+                            <input type="radio" id="dewey" name="drone" value="dewey">
+                            <label for="dewey">Женский</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                       
+                      </div>
+                     
+        
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="email">Электронна почта</label>
+                        <input class="form-inputs__input--lg input" id="email" type="email" value="" name="email" placeholder="Поле ввода" >
+                      </div>
+        
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="tel">Тел.</label>
+                        <input class="form-inputs__input--sm input" id="tel" type="text" value="" name="tel" placeholder="Поле ввода" >
+                      </div>
 
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="inn">ИНН</label>
+                        <input class="form-inputs__input--extra-lg input" id="inn" type="text" value="" name="inn" placeholder="Поле ввода" >
+                      </div>
 
-          <div class="general-info">
-            <div class="general-info__block">
-            <p class="general-info__title">
-              Общая информация 
-            </p>
-            <div class="form-inputs inputs-tabs">
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="surname">Фамилия</label>
-                <input class="form-inputs__input--extra-sm input" id="surname" type="text" value="" name="surname" placeholder="Поле ввода" >
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="livingplace">Адрес проживания</label>
+                        <input class="form-inputs__input--extra-lg input" id="livingplace" type="text" value="" name="livingplace" placeholder="Поле ввода" >
+                      </div>
+
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="workplace">Место работы</label>
+                        <input class="form-inputs__input--extra-lg input" id="workplace" type="text" value="" name="workplace" placeholder="Поле ввода" >
+                      </div>
+        
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="position">Должность</label>
+                        <input class="form-inputs__input--extra-lg input" id="position" type="text" value="" name="position" placeholder="Поле ввода" >
+                      </div>
+                    </div>
+                  </div>
+     
+
+                    <div class="general-info__block">        
+                    <p class="general-info__title">
+                      Дополнительня информация 
+                    </p>
+                    <div class="form-inputs form-inputs__input inputs-tabs">
+                      <textarea class="form-inputs__input--extra-lg textarea" id="other_info" name="other_info" rows="5" cols="33">
+                      </textarea>
+                    </div>
+        
+                  </div>
+                  </div>
+                  <div class="save-cahnges__general-info">
+                    <button class="save-cahnges-btn button change-access__show" id="btn_save_geenInfo">Сохранить</button>
+                  </div> 
+                
+                </div>
               </div>
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="name">Имя</label>
-                <input class="form-inputs__input--extra-sm input" id="name" type="text" value="" name="name" placeholder="Поле ввода" >
+              
+              
+              <!-- Вкладка  Информация о родителях -->
+              <div class="tabs__body">
+                      <div class="change-access">
+                        <button class="change-access__btn button">Изменить</button>
+                      </div>
+                <div class="general-info">
+                  <div class="general-info__block">
+                    <p class="general-info__title">
+                      Информация о родителях 
+                    </p>
+                    <div class="form-inputs inputs-tabs">
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="fio_father">ФИО отца</label>
+                        <input class="form-inputs__input--lg input" id="fio_father" type="text" value="" name="fio_father" placeholder="Поле ввода" >
+                      </div>
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="tel_father">тел</label>
+                        <input class="form-inputs__input--sm input" id="tel_father" type="text" value="" name="tel_father" placeholder="Поле ввода" >
+                      </div>
+        
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="fio_mother">ФИО матери</label>
+                        <input class="form-inputs__input--lg input" id="fio_mother" type="text" value="" name="fio_mother" placeholder="Поле ввода" >
+                      </div>
+        
+                      <div class="form-inputs__input inputs-tabs__form">
+                        <label class="form-inputs__label label" for="tel_mother">тел</label>
+                        <input class="form-inputs__input--sm input" id="tel_mother" type="text" value="" name="tel_mother" placeholder="Поле ввода" >
+                      </div>
+                    </div>
+                    
+                </div> 
+                  </div>
+                  <div class="save-cahnges__general-info btn-bottom">
+                    <button class="save-cahnges-btn button change-access__show" id="btn_save_parents">Сохранить</button>
+                  </div> 
+                </div>
+              <div class="tabs__body">
+                3(НАГРАДЫ) Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore odio exercitationem, excepturi similique nulla, voluptatem
+                reprehenderit neque a minima eaque tenetur? Quos fugit voluptate
+                enim quo sed, minima error molestias!
               </div>
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="patronymic">Отчество</label>
-                <input class="form-inputs__input--extra-sm input" id="patronymic" type="text" value="" name="patronymic" placeholder="Поле ввода" >
+              <div class="tabs__body">
+                5(ЛЬГОТЫ) Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore odio exercitationem, excepturi similique nulla,
+                voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit
+                voluptate enim quo sed, minima error molestias!
               </div>
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="dob">Дата рождения</label>
-                <input class="form-inputs__input--extra-sm input" id="dob" type="text" value="" name="dob" placeholder="Поле ввода" >
+              <div class="tabs__body">
+                6(ДОКИ) Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Inventore odio exercitationem, excepturi similique nulla,
+                voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit
+                voluptate enim quo sed, minima error molestias!
               </div>
 
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="email">Электронна почта</label>
-                <input class="form-inputs__input--lg input" id="email" type="email" value="" name="email" placeholder="Поле ввода" >
-              </div>
-
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="tel">Тел.</label>
-                <input class="form-inputs__input--sm input" id="text" type="tel" value="" name="tel" placeholder="Поле ввода" >
-              </div>
-
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="workplace">Место работы</label>
-                <input class="form-inputs__input--extra-lg input" id="text" type="workplace" value="" name="workplace" placeholder="Поле ввода" >
-              </div>
-
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="position">Должность</label>
-                <input class="form-inputs__input--extra-lg input" id="text" type="position" value="" name="position" placeholder="Поле ввода" >
-              </div>
             </div>
           </div>
-          <div class="general-info__block">
-            <p class="general-info__title">
-              Информация о родителях 
-            </p>
-            <div class="form-inputs inputs-tabs">
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="fio_father">ФИО отца</label>
-                <input class="form-inputs__input--lg input" id="fio_father" type="text" value="" name="fio_father" placeholder="Поле ввода" >
-              </div>
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="tel_father">тел</label>
-                <input class="form-inputs__input--sm input" id="tel_father" type="text" value="" name="tel_father" placeholder="Поле ввода" >
-              </div>
-
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="fio_mother">ФИО матери</label>
-                <input class="form-inputs__input--lg input" id="fio_mother" type="text" value="" name="fio_mother" placeholder="Поле ввода" >
-              </div>
-
-              <div class="form-inputs__input inputs-tabs__form">
-                <label class="form-inputs__label label" for="tel_mother">тел</label>
-                <input class="form-inputs__input--sm input" id="tel_mother" type="text" value="" name="tel_mother" placeholder="Поле ввода" >
-              </div>
-            </div>
-
-            </div>      
-            <div class="general-info__block">        
-            <p class="general-info__title">
-              Дополнительня информация 
-            </p>
-            <div class="form-inputs__input inputs-tabs">
-              <textarea class="form-inputs__input--extra-lg textarea" id="other_info" name="other_info" rows="5" cols="33">
-              </textarea>
-            </div>
-
-          </div>
-          </div>
-          <div class="save-cahnges__general-info">
-            <button class="save-cahnges-btn button change-access__show" id="btn_save">Создать</button>
-          </div> 
+          <!-- /tabs -->
         </div>
         <!-- contant -->
       </div>
       <!-- wrapper -->
+
+
+     
 
       
     </main>
   </body>
   <script src="../js/navigation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../js/tabs.js"></script>
   <script src="../js/person.js"></script>
 </html>
 
